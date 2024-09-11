@@ -182,13 +182,23 @@ export function ResponsiveReunionUpdated() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold">場所</h3>
                 </div>
-                <p className="text-muted-foreground mt-4">いいかねPalette</p>
-                <a
+                {/* <a
                   href="https://maps.app.goo.gl/Bzx2iaLjnb9Nue4o7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground text-left"
                 >
+                  <p className="text-muted-foreground mt-4">いいかねPalette</p>
+                </a> */}
+
+                <a
+                  href="https://maps.app.goo.gl/Bzx2iaLjnb9Nue4o7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground text-center underline"
+                >
+                  いいかねPalette
+                  <br />
                   福岡県田川市猪国2559
                 </a>
               </div>
@@ -220,7 +230,7 @@ export function ResponsiveReunionUpdated() {
             </div>
           </div>
         </section> */}
-        <div className="py-6 md:py-12">
+        <div className="py-6 md:py-12 bg-custom">
           <div className="container mx-auto px-4 flex justify-center">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeDehLEpqb6H2xfzulql-v_OVDyk15BiAyIEviMYaIgrDz5Wg/viewform"
