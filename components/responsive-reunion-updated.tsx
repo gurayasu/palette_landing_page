@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 function YouTubePlaylistPlayer({ playlistId }: { playlistId: string }) {
   return (
@@ -26,7 +27,7 @@ function Countdown({ targetDate }: { targetDate: string }) {
       const now: number = new Date().getTime();
       const target: number = new Date(targetDate).getTime();
       const difference: number = target - now;
-      setDaysLeft(Math.max(0, Math.floor(difference / (1000 * 60 * 60 * 24))));
+      setDaysLeft(Math.max(0, Math.ceil(difference / (1000 * 60 * 60 * 24))));
     }, 1000);
     return () => clearInterval(interval);
   }, [targetDate]);
@@ -54,8 +55,17 @@ export function ResponsiveReunionUpdated() {
       <header className="py-4 md:py-6 border-b sticky top-0 bg-background/80 backdrop-blur-sm z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <h1 className="text-2xl md:text-4xl font-bold black">
-            いいかねPalette 大同窓会 2024
+            いいかねPalette 大同窓会
           </h1>
+          <div className="ml-auto custom-image-container">
+            <Image
+              src="/pallete_channel_logo.jpg"
+              alt="Image Description"
+              width={64} // 適切な幅を指定
+              height={64} // 適切な高さを指定
+              className="h-12 w-12 md:h-18 md:w-18 rounded-full"
+            />
+          </div>
           {/* <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li>
@@ -168,10 +178,10 @@ export function ResponsiveReunionUpdated() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold">日時</h3>
                 </div>
-                <p className="text-muted-foreground mt-2 text-left">
+                <p className="text-muted-foreground mt-2 text-left text-lg md:text-xl font-semibold">
                   2024/12/28(土) ~ 12/29(日)
                 </p>
-                <p className="text-muted-foreground mt-2 text-left">
+                <p className="text-muted-foreground mt-2 text-left text-lg md:text-xl font-semibold">
                   {/* （ 前夜祭: 12/27(金) ) */}※ 調整中
                 </p>
               </div>
@@ -195,7 +205,7 @@ export function ResponsiveReunionUpdated() {
                   href="https://maps.app.goo.gl/Bzx2iaLjnb9Nue4o7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground text-center underline"
+                  className="text-muted-foreground text-center underline text-lg md:text-xl font-semibold"
                 >
                   いいかねPalette
                   <br />
@@ -209,10 +219,10 @@ export function ResponsiveReunionUpdated() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold">対象</h3>
                 </div>
-                <p className="text-muted-foreground mt-4">
+                <p className="text-muted-foreground mt-4 text-lg md:text-xl font-semibold">
                   Palette長期滞在経験者
                 </p>
-                <p className="text-muted-foreground text-left">
+                <p className="text-muted-foreground text-left text-lg md:text-xl font-semibold">
                   そのご家族・ご友人・パートナー等
                 </p>
               </div>
@@ -249,7 +259,7 @@ export function ResponsiveReunionUpdated() {
         </div>
         <section id="countdown" className="py-4 md:py-8 bg-custom">
           <div className="container mx-auto px-4">
-            <Countdown targetDate="2024-12-28T18:00:00" />
+            <Countdown targetDate="2024-12-27T15:00:00Z" />
           </div>
         </section>
       </main>
