@@ -55,7 +55,7 @@ export function ResponsiveReunionUpdated() {
       <header className="py-4 md:py-6 border-b sticky top-0 bg-background/80 backdrop-blur-sm z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <h1 className="text-2xl md:text-4xl font-bold black">
-            いいかねPalette 大同窓会
+            いいかねPalette大同窓会
           </h1>
           <div className="ml-auto custom-image-container">
             <Image
@@ -155,7 +155,11 @@ export function ResponsiveReunionUpdated() {
                   </span>
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground">
-                  様々な時期の長期滞在者が一堂に会する場です。思い出が詰まったPaletteで懐かしい再会や新たな出会いを楽しみましょう。
+                  様々な時期の長期滞在者が集う大同窓会。
+                  <br />
+                  思い出が詰まったPaletteで懐かしい再会や
+                  <br />
+                  新たな出会いを楽しみましょう。
                 </p>
               </div>
               <div className="flex-1 relative w-full max-w-md mx-auto md:max-w-none order-last md:order-none">
@@ -178,10 +182,10 @@ export function ResponsiveReunionUpdated() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold">日時</h3>
                 </div>
-                <p className="text-muted-foreground mt-2 text-left text-lg md:text-xl font-semibold">
+                <p className="text-muted-foreground mt-2 text-left text-2xl md:text-3xl font-semibold">
                   2024/12/28(土) ~ 12/29(日)
                 </p>
-                <p className="text-muted-foreground mt-2 text-left text-lg md:text-xl font-semibold">
+                <p className="text-muted-foreground mt-2 text-left text-xl md:text-2xl font-semibold">
                   {/* （ 前夜祭: 12/27(金) ) */}※ 調整中
                 </p>
               </div>
@@ -192,24 +196,17 @@ export function ResponsiveReunionUpdated() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold">場所</h3>
                 </div>
-                {/* <a
-                  href="https://maps.app.goo.gl/Bzx2iaLjnb9Nue4o7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground text-left"
-                >
-                  <p className="text-muted-foreground mt-4">いいかねPalette</p>
-                </a> */}
-
                 <a
                   href="https://maps.app.goo.gl/Bzx2iaLjnb9Nue4o7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground text-center underline text-lg md:text-xl font-semibold"
+                  className="text-muted-foreground text-center text-2xl md:text-3xl font-semibold"
                 >
                   いいかねPalette
                   <br />
-                  福岡県田川市猪国2559
+                  <p className="text-muted-foreground mt-2 text-left text-xl md:text-2xl font-semibold underline">
+                    福岡県田川市猪国2559
+                  </p>
                 </a>
               </div>
               <div className="flex flex-col items-center text-center group">
@@ -219,10 +216,10 @@ export function ResponsiveReunionUpdated() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold">対象</h3>
                 </div>
-                <p className="text-muted-foreground mt-4 text-lg md:text-xl font-semibold">
+                <p className="text-muted-foreground mt-4 text-2xl md:text-3xl font-semibold">
                   Palette長期滞在経験者
                 </p>
-                <p className="text-muted-foreground text-left text-lg md:text-xl font-semibold">
+                <p className="text-muted-foreground text-left text-xl md:text-2xl font-semibold">
                   そのご家族・ご友人・パートナー等
                 </p>
               </div>
