@@ -155,11 +155,11 @@ export function ResponsiveReunionUpdated() {
                   </span>
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground">
-                  様々な時期の長期滞在者が集う大同窓会。
+                  様々な時期の長期滞在者が集う大同窓会
                   <br />
                   思い出が詰まったPaletteで懐かしい再会や
                   <br />
-                  新たな出会いを楽しみましょう。
+                  新たな出会いを楽しみましょう
                 </p>
               </div>
               <div className="flex-1 relative w-full max-w-md mx-auto md:max-w-none order-last md:order-none">
